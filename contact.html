@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - MalariaFighters.org</title>
+    <style>
+    body{
+         background-color: lightpink;
+    }
+
+        nav, footer {
+            background-color: darkolivegreen;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        nav .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        nav .logo img {
+            width: 50px;
+            height: auto;
+            margin-right: 10px;
+        }
+
+        nav a, footer p {
+            display: inline;
+            margin: 0 10px;
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+
+        /* Contact Page Styles */
+        section {
+            background-color: white;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 80%;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            color: darkolivegreen;
+            margin: 0;
+        }
+
+        /* Contact Form Styles */
+        form {
+            margin-top: 20px;
+        }
+
+        label, input, textarea {
+            display: block;
+            margin: 10px 0;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, textarea {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            background-color: darkolivegreen;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img src="logo.png" alt="MalariaFighters Logo">
+        </div>
+
+        <a href="index.html">Home</a>
+        <a href="about.html">About Us</a>
+        <a href="about.html">Contact</a>
+    </nav>
+
+    <header>
+        <h1>Contact Us</h1>
+    </header>
+
+    <section>
+        <h2>Contact Information</h2>
+        <p>If you have any questions or need to reach out, you can contact us through the following means:</p>
+        <p><strong>Email:</strong> <a href="mailto:fightmalaria@gmail.com">fightmalaria@gmail.com</a></p>
+        <p><strong>Phone:</strong> +256783671764</p>
+    </section>
+
+    <section>
+        <h2>Contact Form</h2>
+
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name"  required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email"  required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" rows="4" required></textarea>
+
+            <button type="submit">Submit</button>
+        </form>
+
+
+
+
+    </section>
+
+    <footer>
+      <p style="background-color: DarkOliveGreen;">&copy; 2023Fight Malaria Ug</p>
+    </footer>
+</body>
+</html>
+
